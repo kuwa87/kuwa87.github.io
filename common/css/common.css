@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*common*/
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+html { 
+	font-size: 62.5%; 
+}
+body{
+	line-height: initial;
+}
+.wrap{
+	width: 94%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+/*header*/
+
+header{
+	background-color: #fff;
+	padding: 1em 0;
+}
+header a{
+	text-decoration: none;
+}
+
+.head-left{
+	float: left;
+}
+.head-left a {
+	font-family: 'Cabin Sketch', cursive;
+	color: #e24e42;
+	margin-bottom: 0;
+	font-size: 4rem;
+	font-weight: bold;
+}
+.head-right{
+	float: right;
+}
+.head-right a{
+	float: left;
+	display: block;
+}
+.lang{
+	background-color: #e24e42;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0 10px;
+	margin: 0 5px 0;
+	border: 1px solid #e24e42;
+}
+.lang i{
+	font-size: 1.4rem;
+	margin-right: 5px;
+}
+.lang:hover{
+	background-color: #fff;
+	color: #e24e42;
+}
+.lang:hover i{
+	color: #e24e42;
+}
+.head-right .fa-github{
+	font-size: 4rem;
+	color:  #e24e42;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.head-right .fa-github:hover{
+	color: #e24e42;
+}
+
+/*main*/
+
+.main-img{
+	background: url(../img/main01.jpg) no-repeat;
+	background-size: cover;
+	height: 300px;
+	padding: 20px;
+	position: relative;
+}
+
+.main-img h1{
+	margin-top: 50px;
+	font-family: 'Cabin Sketch', cursive;
+	color: #fff;
+	font-size: 3rem;
+	position: absolute;
+	bottom: 20px;
+}
+
+/*content*/
+.content{
+	margin: 40px 0;
+	text-align: center;
+}
+
+.normal-heading{
+	color: #e24e42;
+	font-family: 'Cabin Sketch', cursive;
+	text-align: center;
+  position: relative;
+}
+.normal-heading span {
+  z-index: 2;
+  display: inline-block;
+  margin: 0 2.5em;
+  padding: 0 1em;
+  background-color: #fff;
+  text-align: left;
+  position: relative;
+}
+.normal-heading::before {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+.content .col{
+	border: 1px solid rgba(226,78,66,0.6);
+}
+
+.content .col h3{
+	background-color: rgba(226,78,66,0.6);
+	color: #fff;
+	padding: 2px;
+}
+
+.content .col p{
+	padding: 2px 10px;
+
+}
+
+footer{
+	color: #e24e42;		
+	text-align: center;
+	font-size: 1.2rem;
+	margin-top: 50px;
+	padding: 10px 0;
+}
+@media (max-width: 767px) {
+	
+/*
+	header .head-left{
+		float: none;
+		display: block;
+		margin-bottom: 10px;
+	}
+*/
+	.normal-heading span{
+		margin: 0;
+	}
+}
