@@ -91,12 +91,13 @@ header a{
 	font-size: 3rem;
 	position: absolute;
 	bottom: 20px;
+  line-height: 4rem;
 }
 /*news*/
 .ticker {
     margin: 0 auto;
     padding: 10px;
-    width: 600px;
+    width: 100%;
     text-align: left;
     border: #ccc 1px solid;
     position: relative;
