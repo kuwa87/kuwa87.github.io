@@ -133,8 +133,17 @@ header a{
 	color: #fff;
 	padding: 2px;
 }
+.i-box{
+  height: 6rem;
+}
+
+i.fas{
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: rgba(226,78,66,1);
+}
 i.fab{
-  font-size: 8rem;
+  font-size: 6rem;
   color: rgba(226,78,66,1);
 }
 .content .col p{
