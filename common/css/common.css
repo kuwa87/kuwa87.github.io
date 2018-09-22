@@ -101,9 +101,11 @@ header a{
 
 .normal-heading{
 	color: #e24e42;
-	font-family: 'Cabin Sketch', cursive;
+  	/* font-family: 'Cabin Sketch', cursive; */
 	text-align: center;
   position: relative;
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 .normal-heading span {
   z-index: 2;
@@ -117,7 +119,7 @@ header a{
 .normal-heading::before {
   position: absolute;
   top: 50%;
-  z-index: 1;
+  /* z-index: 1; */
   content: '';
   display: block;
   width: 100%;
@@ -137,14 +139,15 @@ header a{
   height: 6rem;
 }
 
-i.fas{
+.i-box i.fas{
   font-size: 5rem;
   margin-bottom: 1rem;
-  color: rgba(226,78,66,1);
+  color: rgba(226,78,66,0.9);
+  margin-left: 1.5rem;
 }
-i.fab{
-  font-size: 6rem;
-  color: rgba(226,78,66,1);
+.i-box i.fab{
+  font-size: 5.7rem;
+  color: rgba(226,78,66,0.9);
 }
 .content .col p{
 	padding: 2px 10px;
@@ -157,6 +160,42 @@ footer{
 	font-size: 1.2rem;
 	margin-top: 50px;
 	padding: 10px 0;
+}
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+#page-top i {
+  padding-top: 6px;
+  display: block;
+}
+
+
+
+#page-top a {
+  display: block;
+  z-index: 999;
+  padding: 5px 0 0 0;
+  border-radius: 30px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(226,78,66,0.9);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid rgba(226,78,66,0.9);
+}
+
+
+
+#page-top a:hover {
+  color: rgba(226,78,66,0.9);
+  background-color: #fff;
 }
 @media (max-width: 767px) {
 
