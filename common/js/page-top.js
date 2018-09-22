@@ -1,35 +1,20 @@
 //page topボタン
 
 $(function(){
-var topBtn=$('#page-top');
-topBtn.hide();
+  $('#page-top').hide();                     // デフォルトで非表示とする
 
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {          // ←【1】scrollTop() で現在のスクロール上の上位置を取得
+      $('#page-top').fadeIn();               // 100を過ぎていたら、#backToTop（戻るボタン）をフェードインさせる
+    } else {
+      $('#page-top').fadeOut();              // それ以外は、フェードアウト
+    }
+  });
 
-
-//◇ボタンの表示設定
-$(window).scroll(function(){
-  if($(this).scrollTop()>80){
-
-    //---- 画面を80pxスクロールしたら、ボタンを表示する
-    topBtn.fadeIn();
-
-  }else{
-
-    //---- 画面が80pxより上なら、ボタンを表示しない
-    topBtn.fadeOut();
-
-  }
-});
-
-
-
-// ◇ボタンをクリックしたら、スクロールして上に戻る
-topBtn.click(function(){
-  $('body,html').animate({
-  scrollTop: 0},500);
-  return false;
-
-});
-
+  // クリック時にスムーズにページ上部へスクロールさせる
+  $('#page-top').click(function(){
+    $('body,html').animate({ scrollTop: 0 }, 350);  // ←【2】
+    return false;  // ←【3】
+  });
 
 });
