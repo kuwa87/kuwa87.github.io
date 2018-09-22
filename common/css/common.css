@@ -8,8 +8,8 @@
   display: block;
   clear: both;
 }
-html { 
-	font-size: 62.5%; 
+html {
+	font-size: 62.5%;
 }
 body{
 	line-height: initial;
@@ -81,7 +81,7 @@ header a{
 	background: url(../img/main01.jpg) no-repeat;
 	background-size: cover;
 	height: 300px;
-	padding: 20px;
+	padding: 20px 0;
 	position: relative;
 }
 
@@ -141,14 +141,14 @@ header a{
 }
 
 footer{
-	color: #e24e42;		
+	color: #e24e42;
 	text-align: center;
 	font-size: 1.2rem;
 	margin-top: 50px;
 	padding: 10px 0;
 }
 @media (max-width: 767px) {
-	
+
 /*
 	header .head-left{
 		float: none;
