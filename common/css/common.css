@@ -119,21 +119,31 @@ nav ul li:first-of-type a:hover{
 }
 /*main*/
 
-.main-img{
+/* .main-img{
 	background: url(../img/main01.jpg) no-repeat;
 	background-size: cover;
 	height: 300px;
 	padding: 20px 0;
   position: relative;
+  margin-top: 36px;
+} */
+.swiper-slide img{
+	/* height: 300px; */
+	/* padding: 20px 0; */
+  position: absolute;
+  top: 0;
 }
-.main-img h1{
+.swiper-slide p,
+  .swiper-slide h1{
 	margin-top: 50px;
 	font-family: 'Cabin Sketch', cursive;
 	color: #fff;
 	font-size: 3rem;
 	position: absolute;
-	bottom: 20px;
+	bottom: 10px;
   line-height: 4rem;
+  text-align: left;
+  left: calc(3% + 10px);
 }
 /*news*/
 .ticker {
@@ -162,10 +172,10 @@ nav ul li:first-of-type a:hover{
 }
 /*content*/
 .content{
-	margin: 40px 0;
+	margin: 40px 0 60px;
 	text-align: center;
-  padding-top: 90px;
-  margin-top: -50px;
+  /* padding-top: 90px;
+  margin-top: -50px; */
 }
 
 .normal-heading{
@@ -250,10 +260,10 @@ footer{
 #page-top a {
   display: block;
   z-index: 999;
-  padding: 5px 0 0 0;
+  padding: 10px 0 0 0;
   border-radius: 30px;
-  width: 44px;
-  height: 44px;
+  width: 54px;
+  height: 54px;
   background-color: rgba(226,78,66,0.9);
   color: #fff;
   font-weight: bold;
@@ -269,8 +279,13 @@ footer{
   background-color: #fff;
 }
 @media (max-width: 767px) {
+
+  header {
+    padding: .6em 0;
+}
+
   .head-right {
-      margin-right: 50px;
+      margin-right: 47px;
     }
 nav ul li{
   width: 100%;
@@ -280,6 +295,16 @@ nav ul li:first-of-type a{
 }
 nav ul li a{
   border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+nav ul li a:hover{
+  border-bottom: none;
+  border-top: none;
+}
+.head-right .fa-github {
+    font-size: 3rem;
+    margin-top: 8px;
 }
 
 /*
@@ -292,4 +317,7 @@ nav ul li a{
 	.normal-heading span{
 		margin: 0;
 	}
+  .main-img{
+    margin-top: 0;
+  }
 }

@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="common/css/common.css"/>
 <link rel="stylesheet" href="common/css/jquery.simpleTicker.css"/>
 <link rel="stylesheet" href="common/css/menu.css"/>
+<link rel="stylesheet" href="common/css/swiper.css"/>
 <link rel="stylesheet" href="common/fonts/font-awesome.css"/>
 <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -34,9 +35,10 @@
 <script src="common/js/jquery-3.3.1.min.js"></script>
 <script src="common/js/common.js"></script>
 <script src="common/js/jquery.simpleTicker.js"></script>
+<script src="common/js/swiper.js"></script>
 </head>
 
-<body>
+<body id="body">
 <header>
 <div class="wrap clearfix">
 <div class="head-left">
@@ -58,18 +60,40 @@
 <nav class="cp_offcm03">
 	<div class="wrap">
 	<ul class="clearfix">
-		<li><a href="#skills" class="link">skills</a></li>
-		<li><a href="#works" class="link">works</a></li>
-		<li><a href="#career" class="link">career</a></li>
+		<li><a href="#skills" class="link">Skills</a></li>
+		<li><a href="#works" class="link">Works</a></li>
+		<li><a href="#career" class="link">Career</a></li>
 	</ul>
 </div>
 </nav>
 <div class="main-img">
 <div class="wrap">
-<h1>I'm Kuwa.<br>This is my portfolio.
+<!-- <h1>I'm Kuwa.<br>This is my portfolio. -->
 </h1>
 </div>
 </div>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<img src="common/img/main01.jpg" alt=""><h1>I'm Kuwa.<br>This is my portfolio.
+		</div>
+		<div class="swiper-slide"><img src="common/img/main01.jpg" alt="">
+<p>Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="swiper-slide"><img src="common/img/main01.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
+		</div>
+		<div class="swiper-slide"><img src="common/img/main01.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+	</div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+	<!-- Add Arrows -->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+</div>
+
 <section class="content" id="skills">
 <div class="wrap">
 
@@ -125,5 +149,23 @@
 </div> -->
 <p id="page-top"><a href="#"><i class="fas fa-chevron-up"></i></a></p>
 <footer>© 2018 Kuwa87</footer>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+</script>
 </body>
 </html>
