@@ -18,7 +18,7 @@ height: 65vh;
 position: absolute;
 z-index: 5;
 top: 79px;
-left: 0;
+right: 0;
 overflow: auto;
 width: 100%;
 height: auto;
@@ -80,7 +80,7 @@ text-align: center;
 /* menu */
 .cp_offcm03 {
 position: fixed;
-left: -200px;
+right: -200px;
 overflow-y: hidden;
 width: 200px;
 height: 100%;
@@ -88,6 +88,7 @@ padding-top: 60px;
 color: #ffffff;
 background-color: #e24e42;
 top: 0;
+padding-top: 15px;
 
 }
 .cp_offcm03 nav {
@@ -105,7 +106,6 @@ padding: 20px;
 .cp_mobilebar {
 display: block;
 z-index: 10;
-/* position: fixed; */
 position: absolute;
 top: 0;
 right: 3%;
@@ -136,6 +136,7 @@ border-radius: 1px;
 background-color: #e24e42;
 -webkit-transition: transform .3s ease;
 transition: transform .3s ease;
+
 }
 .cp_menuicon > span:before,
 .cp_menuicon > span:after {
@@ -159,19 +160,29 @@ transform: translateY(0.7em);
 #cp_toggle03:checked + .cp_mobilebar .cp_menuicon {
 -webkit-transform: rotate(45deg);
 transform: rotate(45deg);
+
+}
+#cp_toggle03:checked + .cp_mobilebar span{
+  background-color: #fff;
 }
 #cp_toggle03:checked + .cp_mobilebar span:before,
 #cp_toggle03:checked + .cp_mobilebar span:after {
 -webkit-transform: rotate(90deg);
 transform: rotate(90deg);
+background-color: #fff;
 }
 #cp_toggle03:checked ~ .cp_offcm03 {
--webkit-transform: translateX(100%);
-transform: translateX(100%);
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
 }
 #cp_toggle03:checked ~ .cp_container {
 -webkit-transform: translateX(250px);
 transform: translateX(250px);
+}
+
+#cp_toggle03:checked + .cp_mobilebar{
+  position: fixed;
+
 }
 /* content */
 .cp_container {
