@@ -21,8 +21,8 @@
 (function($) {
   $.simpleTicker =function(element, options) {
     var defaults = {
-      speed : 3000,
-      delay : 3000,
+      speed : 2000,
+      delay : 4000,
       easing : 'swing',
       effectType : 'slide'
     }

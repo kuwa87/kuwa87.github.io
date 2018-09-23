@@ -72,9 +72,51 @@ header a{
 	margin-left: 10px;
 }
 .head-right .fa-github:hover{
-	color: #e24e42;
+	color: #42d6e2;
+}
+/*nav*/
+
+.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }
 
+nav{
+  background-color: #e24e42;
+  height: 3.4rem;
+}
+
+nav ul li{
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+}
+nav ul li:first-of-type a{
+  border-left: 1px solid #fff;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  height: 3.4rem;
+  padding: 8px 0 0;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #e24e42;
+  border-bottom: 1px solid #e24e42;
+
+}
+nav ul li a:hover{
+  background-color: #fff;
+  color: #e24e42;
+  border-right: 1px solid #e24e42;
+}
+nav ul li:first-of-type a:hover{
+  border-left: 1px solid #e24e42;
+}
 /*main*/
 
 .main-img{
@@ -103,6 +145,9 @@ header a{
     position: relative;
     overflow: hidden;
     height: 4rem;
+    background-color: rgba(226,78,66,.8);
+    color: #fff;
+    border-radius: 15px;
 }
 
 .ticker ul {
@@ -119,6 +164,8 @@ header a{
 .content{
 	margin: 40px 0;
 	text-align: center;
+  padding-top: 90px;
+  margin-top: -50px;
 }
 
 .normal-heading{
@@ -187,6 +234,8 @@ footer{
   position: fixed;
   bottom: 20px;
   right: 1%;
+  border-radius: 30px;
+  background-color: #fff;
 }
 
 
@@ -220,6 +269,18 @@ footer{
   background-color: #fff;
 }
 @media (max-width: 767px) {
+  .head-right {
+      margin-right: 50px;
+    }
+nav ul li{
+  width: 100%;
+}
+nav ul li:first-of-type a{
+  border-left: none;
+}
+nav ul li a{
+  border-right: none;
+}
 
 /*
 	header .head-left{
