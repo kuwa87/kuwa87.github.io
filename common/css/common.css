@@ -265,16 +265,13 @@ nav ul li:first-of-type a:hover{
 /*bnr*/
 
 #bnr-box .col{
-  height: 70px;
   margin-bottom: 20px;
   line-height: 70px;
   border: none;
 }
 #bnr-box .col a{
-  height: 70px;
   width: 100%;
   display: block;
-  background-color: rgba(226,78,66,0.5);
 }
 #bnr-box .col a:hover{
   opacity: .6;
@@ -373,6 +370,8 @@ a:hover .fa-github{
 }
 .cp_offcm03 a.sp-only{
   padding: 0 0 10px;
+  width: 70px;
+  margin: 0 auto;
 }
 /*
 	header .head-left{
