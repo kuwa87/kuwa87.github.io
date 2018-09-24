@@ -244,7 +244,6 @@ nav ul li:first-of-type a:hover{
 #works .col{
  height: 200px;
  border: #f2f2f2 1px solid;
- padding: 20px;
 }
 #works .col a{
   height: 200px;
@@ -264,16 +263,16 @@ nav ul li:first-of-type a:hover{
 }
 /*bnr*/
 
-#bnr-box .col{
+#works .col{
   margin-bottom: 20px;
   line-height: 70px;
   border: none;
 }
-#bnr-box .col a{
+#works .col a{
   width: 100%;
   display: block;
 }
-#bnr-box .col a:hover{
+#works .col a:hover{
   opacity: .6;
 }
 /*footer*/
@@ -386,11 +385,11 @@ a:hover .fa-github{
   .main-img{
     margin-top: 0;
   }
-  #bnr-box .col{
+  #works .col{
     width: calc(50% - 2%);
     margin-left: 2%;
 }
-#bnr-box .row.gutters{
+#works .row.gutters{
   margin-left: -2%;
   display: flex;
   flex-direction: row;
