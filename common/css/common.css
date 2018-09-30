@@ -264,8 +264,8 @@ nav ul li:first-of-type a:hover{
 /*bnr*/
 
 #works .col{
-  margin-bottom: 20px;
-  line-height: 70px;
+/*  margin-bottom: 20px;*/
+/*  line-height: 70px;*/
   border: none;
 }
 #works .col a{
@@ -385,7 +385,7 @@ a:hover .fa-github{
   .main-img{
     margin-top: 0;
   }
-  #works .col{
+  #works .col-4{
     width: calc(50% - 2%);
     margin-left: 2%;
 }
@@ -395,4 +395,9 @@ a:hover .fa-github{
   flex-direction: row;
   flex-wrap: wrap;
 }
+}
+@media (max-width: 374px) {
+.head-right a{
+	font-size: 1.3rem;
+	}
 }
