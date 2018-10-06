@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="../common/css/jquery.simpleTicker.css"/>
 <link rel="stylesheet" href="../common/css/menu.css"/>
 <link rel="stylesheet" href="../common/css/swiper.css"/>
-<link rel="stylesheet" href="../common/css/common.css"/>
 <link rel="stylesheet" href="../common/fonts/font-awesome.css"/>
+<link rel="stylesheet" href="common/css/lightbox.css"/>
+<link rel="stylesheet" href="../common/css/common.css"/>
 <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="57x57" href="../common/favicon/apple-icon-57x57.png">
@@ -33,9 +34,10 @@
 <meta name="theme-color" content="#ffffff">
 <!--[if lt IE 9]><script src="../common/js/html5shiv-printshiv.js"></script><![endif]-->
 <script src="../common/js/jquery-3.3.1.min.js"></script>
-<script src="../common/js/common.js"></script>
 <script src="../common/js/jquery.simpleTicker.js"></script>
 <script src="../common/js/swiper.js"></script>
+<script src="../common/js/lightbox.js"></script>
+<script src="../common/js/common.js"></script>
 </head>
 
 <body id="body">
@@ -129,17 +131,24 @@
 <section class="content" id="works">
 <div class="wrap">
 	<h2 class="normal-heading"><span>Works</span></h2>
-	<p>Coming soon...</p>
-	<!-- <div class="row gutters">
-		<div class="col col-4">
-		<a href="#">wp-theme and blog</a>
+	<p>Banner Design</p>
+	<div class="row gutters">
+		<div class="col col-4 up">
+		<a href="../common/img/bnr01.jpg" data-lightbox="fuga" data-title="スイーツショップフェアイメージ<br>所要時間約4時間"><img src="common/img/bnr01.jpg" alt="">
+		</a>
 		</div>
-		<div class="col col-4">
-			<a href="#">grafic design</a>
+		<div class="col col-4 up02">
+			<a href="../common/img/bnr02.jpg" data-lightbox="fuga" data-title="インテリアショップ特集記事<br>所要時間約3時間"><img src="common/img/bnr02.jpg" alt="">
+			</a>
 		</div>
-		<div class="col col-4">
-			<a href="#">LP</a>
-		</div> -->
+		<div class="col col-4 up03">
+			<a href="../common/img/bnr02.jpg" data-lightbox="fuga" data-title="インテリアショップ特集記事<br>所要時間約3時間"><img src="common/img/bnr02.jpg" alt="">
+			</a>
+		</div>
+		<div class="col col-12">
+							<span>※画像をクリックすると拡大します。</span>
+		</div>
+	</div>
 </div>
 </section>
 <section class="content" id="career">
@@ -154,33 +163,6 @@
 		Webデザイナー</p>
 	</div>
 </div>
-</section>
-<section class="content" id="bnr-box">
-<div class="wrap">
-	<h2 class="normal-heading"><span>Banner Sample</span></h2>
-	<p>Coming soon...</p>
-	<div class="row gutters">
-		<div class="col col-4">
-		<a href="#">bnr-box</a>
-		</div>
-		<div class="col col-4">
-			<a href="#">bnr-box</a>
-		</div>
-		<div class="col col-4">
-			<a href="#">bnr-box</a>
-		</div>
-		<div class="col col-4">
-			<a href="#">bnr-box</a>
-		</div>
-		<div class="col col-4">
-			<a href="#">bnr-box</a>
-		</div>
-		<div class="col col-4">
-			<a href="#">bnr-box</a>
-		</div>
-	</div>
-</div>
-
 </section>
 <!-- <div class="wrap">
 <div id="slide" class="ticker">
@@ -210,6 +192,13 @@
 			prevEl: '.swiper-button-prev',
 		},
 	});
+</script>
+<script src="../common/js/scrollreveal.min.js"></script>
+<script>
+       window.sr = ScrollReveal({ reset: false ,mobile: false});
+       sr.reveal( '.up', { origin: 'bottom' , distance: '50%', duration: 800 , scale: 1.0, delay :0 ,opacity: 0.5,});
+       sr.reveal( '.up02', { origin: 'bottom' , distance: '50%', duration: 1000 , scale: 1.0, delay :0 ,opacity: 0.5,});
+       sr.reveal( '.up03', { origin: 'bottom' , distance: '50%', duration: 1200 , scale: 1.0, delay :0 ,opacity: 0.5,});
 </script>
 </body>
 </html>
