@@ -352,7 +352,7 @@ p.quote2 {
     position: fixed;
     bottom: 20px;
     right: 1%;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     background-color: #fff;
     z-index: 100;
 }
@@ -360,7 +360,7 @@ p.quote2 {
 
 
 #page-top i {
-    padding-top: 6px;
+    padding-top: 3px;
     display: block;
 }
 
@@ -370,21 +370,20 @@ p.quote2 {
     display: block;
     z-index: 999;
     padding: 10px 0 0 0;
-    border-radius: 30px;
-    width: 54px;
-    height: 54px;
-    background-color: rgba(226, 78, 66, 0.9);
+    width: 44px;
+    height: 44px;
+    background-color: #000;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    border: 1px solid rgba(226, 78, 66, 0.9);
+    border: 1px solid #000;
 }
 
 
 
 #page-top a:hover {
-    color: rgba(226, 78, 66, 0.9);
+    color: #000;
     background-color: #fff;
 }
 
