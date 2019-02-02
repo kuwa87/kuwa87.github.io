@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox.js"></script>
+    <link rel="stylesheet" href="path/colorbox/colorbox.css" />
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="js/lightbox.js"></script>
+    <!-- <script src="js/common.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="nav-inner">
+                <a href="./" class="navbar-brand">Desing with</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link"><span>About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#works" class="nav-link"><span>Works</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skill" class="nav-link"><span>Skill</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- main -->
+        <main>
+            <div class="main-img">
+                <h1 class="quote">Design & Development</h1>
+                <p class="quote2">Web制作承ります。
+                </p>
+            </div>
+            <!-- <section id="news">
+            <ul>
+                <li>
+                    <span class="date">2019.1.26</span><span class="content">Webサイトをリニューアルしました</span>
+                <li>
+                    <a href="">
+                        <span class="date">2019.1.26</span><span class="content">サービス提供を開始しました</span>
+                    </a>
+                </li>
+            </ul>
+        </section> -->
+            <section id="about" class="basic-section">
+                <h2 id="about-title">About
+                    <span>私にできること</span>
+                </h2>
+                <div class="row">
+                    <div class="img-box col-md-7">
+                        <img src="img/pc.jpg" alt="">
+                    </div>
+                    <div class="text-box col-md-5">
+                        <h3>Design & Development</h3>
+                        <p>
+                            Web制作会社での実務経験（デザイン・フロントエンド）に加え、PHPの知識があります。<br><br>
+                            デザイン・コーディング・更新作業等において、迅速かつ幅広い対応が可能です。
+                        </p>
+                        <a href="" class="btn right-bottom">Read more</a>
+                    </div>
+                </div>
+            </section>
+            <section id="works" class="basic-section flip">
+                <h2 id="works-title">Works
+                    <span>制作実績</span>
+                </h2>
+                <p>コーポレートサイトからバナー作成まで、幅広くWeb制作に携わりました。</p>
+                <p class="caption">※下記は、実務での経験を踏まえ、ポートフォリオ用に新たにデザインしたものです。</p>
+                <div class="row inner-wrap">
+                    <div class="img-box col-md-4">
+                        <a href="img/shopping.png" data-lightbox="fuga" data-title="ショッピングモール<br>フロアガイド・店舗詳細など、ショッピングモールに特徴的な機能を実装しています。"><img
+                                src="img/shopping.png" alt="">
+                        </a>
+
+                        <!-- <img src="img/works01.png" alt=""> -->
+                        <p>ショッピングモール
+                            <span>フロアガイド・店舗詳細など、ショッピングモールに特徴的な機能を実装しています。<br>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="img-box col-md-4">
+                        <a href="img/recruit.png" data-lightbox="fuga" data-title="リクルートサイト"><img src="img/recruit.png"
+                                alt="">
+                        </a>
+                        <p>リクルートサイト<span>食品関連事業の企業を想定しています。<br>
+                            </span></p>
+                    </div>
+                    <div class="img-box col-md-4">
+                        <a href="img/hotel.png" data-lightbox="fuga" data-title="旅館・ホテル"><img src="img/hotel.png" alt="">
+                        </a>
+                        <p>旅館・ホテル<span>旅館のサイトです。<br>
+                            </span></p>
+                    </div>
+
+                    <!-- 追加予定コンテンツ
+                    イベント告知バナー数種類
+                    産学連携プロジェクト
+                    エステサロン -->
+
+                </div>
+            </section>
+            <section id="skill" class="basic-section">
+                <h2 id="skill-title">Skillset
+                    <span>技術</span>
+                </h2>
+                <div class="row inner-wrap ">
+                    <div class="col-md-2">
+                        <i class="fab fa-adobe"></i><br>
+                        <span>Photoshop<br>XD</span>
+                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <a href="about/index.html" class="btn btn-detail" data-lightbox="fuga" data-title="ショッピングモール<br>">
+                            detail
+                        </a>
+                        </a><a href="" class="btn btn-detail">detail</a>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fab fa-html5"></i><br>
+                        <span>HTML5<br>CSS3</span>
+                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                        <a href="" class="btn btn-detail">detail</a>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fa fa-code"></i><br>
+                        <span>Boot Strap</span>
+                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                        <a href="" class="btn btn-detail">detail</a>
+
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fab fa-wordpress-simple"></i><br>
+                        <span>Word Press</span>
+                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        <a href="" class="btn btn-detail">detail</a>
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <i class="fab fa-js"></i><br>
+                        <span>JavaScript<br>jQuery</span>
+                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        <a href="" class="btn btn-detail">detail</a>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fab fa-php"></i><br>
+                        <span>PHP</span>
+                        <div><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <a href="" class="btn btn-detail">detail</a>
+
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="basic-section flip">
+                <h2 id="contact-title">Contact
+                    <span>お問い合わせ・SNS</span>
+                </h2>
+                <div class="small-wrap">
+                    <a href="https://github.com/kuwa87"><i class="fab fa-github"></i><br>https://github.com/kuwa87</a>
+                    <p>現在コンタクトフォームは準備中です。</p>
+                </div>
+            </section>
+    </div>
+    </main>
+    <p id="page-top"><a href="#"><i class="fas fa-chevron-up"></i></a></p>
+    </div>
+</body>
+
+</html>
