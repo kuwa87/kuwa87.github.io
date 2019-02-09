@@ -55,7 +55,7 @@
             <nav class="navbar navbar-expand-md navbar-light">
                 <!-- <div class="nav-inner"> -->
 
-                <a href="./" class="navbar-brand">Kaori.K</a>
+                <a href="index.html" class="navbar-brand">Kuwa87</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link"><span>Home</span></a>
+                            <a href="index.html" class="nav-link"><span>Home</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="#about" class="nav-link"><span>About</span></a>
@@ -86,9 +86,8 @@
         <!-- main -->
         <main>
             <div class="main-img">
-                <h1 class="quote">Design & Development</h1>
-                <p class="quote2">Web制作承ります。
-                </p>
+                <h1 class="quote">Web Design & Development </h1>
+                <p class="quote2">Web技術を通して、社会に貢献したい。</p>
             </div>
             <!-- <section id="news">
             <ul>
@@ -101,7 +100,8 @@
                 </li>
             </ul>
         </section> -->
-            <section id="about" class="basic-section">
+            <div class="prf-img"></div>
+            <section id="about" class="basic-section hidden_box">
                 <h2 id="about-title">About
                     <span>私にできること</span>
                 </h2>
@@ -111,112 +111,175 @@
                     </div>
                     <div class="text-box col-md-5">
                         <h3>Design & Development</h3>
+                        <p>Web制作会社での実務経験（デザイン・フロントエンド）があり、チームでのWeb制作を経験しています。<br>
+                            デザイン・コーディング・更新作業等において、迅速かつ幅広い対応が可能です。</p>
                         <p>
-                            Web制作会社での実務経験（デザイン・フロントエンド）に加え、PHPの知識があります。<br><br>
-                            デザイン・コーディング・更新作業等において、迅速かつ幅広い対応が可能です。
+                            バックエンド（PHP・データベース）も勉強中です。企画から実装・運用まで、トータルサポートができるようになるのが目標です。
                         </p>
-                        <!-- <a href="" onClick="window.alert('準備中です。後日更新致します'); return false;" class="btn right-bottom">Read
-                            more</a> -->
+                        <!-- <a href="#skill" class="btn right-bottom">スキルセット</a> -->
+                        <!-- <label for="label0" class="btn btn-detail">detail</label> -->
                     </div>
+
                 </div>
-            </section>
-            <section id="works" class="basic-section flip">
-                <h2 id="works-title">Works
-                    <span>制作実績</span>
-                </h2>
-                <p>コーポレートサイトからバナー作成まで、幅広くWeb制作に携わりました。</p>
-                <p class="caption">※下記は、実務での経験を踏まえ、ポートフォリオ用に新たにデザインしたものです。</p>
-                <div class="row inner-wrap">
-                    <div class="img-box col-md-4">
-                        <a href="img/shopping.png" data-lightbox="fuga" data-title="ショッピングモール"><img src="img/shopping.png"
-                                alt="">
-                        </a>
+    </div>
+    <div class="hidden_box row" id="about-detail">
+        <input type="checkbox" id="label0" />
+        <div class="hidden_show">
+            <!--非表示ここから-->
+            <h4>経験</h4>
+            <p></p>
+            <!--ここまで-->
+        </div>
+    </div>
 
-                        <!-- <img src="img/works01.png" alt=""> -->
-                        <p>ショッピングモール
-                            <span>ショッピングモールのサイト制作に携わりました。<br>
-                            </span>
-                        </p>
-                    </div>
-                    <div class="img-box col-md-4">
-                        <a href="img/recruit.png" data-lightbox="fuga" data-title="リクルートサイト"><img src="img/recruit.png"
-                                alt="">
-                        </a>
-                        <p>リクルートサイト<span>食品関連事業の企業を想定しています。<br>
-                            </span></p>
-                    </div>
-                    <div class="img-box col-md-4">
-                        <a href="img/hotel.png" data-lightbox="fuga" data-title="旅館・ホテル"><img src="img/hotel.png" alt="">
-                        </a>
-                        <p>旅館・ホテル<span>旅館のサイトです。<br>
-                            </span></p>
-                    </div>
+    </section>
 
-                    <!-- 追加予定コンテンツ
+    <section id="works" class="basic-section flip">
+        <h2 id="works-title">Works
+            <span>制作実績</span>
+        </h2>
+        <p>コーポレートサイトからバナー作成まで、幅広くWeb制作に携わりました。</p>
+        <p class="caption">※下記は、実務での経験を踏まえ、ポートフォリオ用に新たにデザインしたものです。</p>
+        <div class="row inner-wrap">
+            <div class="img-box col-md-4">
+                <a href="img/shopping.png" data-lightbox="fuga" data-title="ショッピングモール"><img src="img/shopping.png" alt="">
+                </a>
+
+                <p>ショッピングモール
+                    <span>ショッピングモールのサイト制作に携わりました。<br>
+                    </span>
+                </p>
+            </div>
+            <div class="img-box col-md-4">
+                <a href="img/recruit.png" data-lightbox="fuga" data-title="リクルートサイト"><img src="img/recruit.png" alt="">
+                </a>
+                <p>リクルートサイト<span>食品関連事業の企業を想定しています。</span><br>
+                </p>
+            </div>
+            <div class="img-box col-md-4">
+                <a href="img/hotel.png" data-lightbox="fuga" data-title="旅館・ホテル"><img src="img/hotel.png" alt="">
+                </a>
+                <p>旅館・ホテル<span>旅館のサイトです。</span><br>
+                </p>
+            </div>
+
+            <!-- 追加予定コンテンツ
                     イベント告知バナー数種類
                     産学連携プロジェクト
                     エステサロン -->
 
-                </div>
-            </section>
-            <section id="skill" class="basic-section">
-                <h2 id="skill-title">Skillset
-                    <span>技術</span>
-                </h2>
-                <div class="row inner-wrap ">
-                    <div class="col-md-2">
-                        <i class="fab fa-adobe"></i><br>
-                        <span>Photoshop<br>XD</span>
-                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <!-- <a href="" class="btn btn-detail">detail</a> -->
-                    </div>
-                    <div class="col-md-2">
-                        <i class="fab fa-html5"></i><br>
-                        <span>HTML5<br>CSS3</span>
-                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-
-                        <!-- <a href="" class="btn btn-detail">detail</a> -->
-                    </div>
-                    <div class="col-md-2">
-                        <i class="fa fa-code"></i><br>
-                        <span>Boot Strap</span>
-                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-
-                        <!-- <a href="" class="btn btn-detail">detail</a> -->
-
-                    </div>
-                    <div class="col-md-2">
-                        <i class="fab fa-wordpress-simple"></i><br>
-                        <span>Word Press</span>
-                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                        <!-- <a href="" class="btn btn-detail">detail</a> -->
-
-                    </div>
-
-                    <div class="col-md-2">
-                        <i class="fab fa-js"></i><br>
-                        <span>JavaScript<br>jQuery</span>
-                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                        <!-- <a href="" class="btn btn-detail">detail</a> -->
-                    </div>
-                    <div class="col-md-2">
-                        <i class="fab fa-php"></i><br>
-                        <span>PHP</span>
-                        <div><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                        <!-- <a href="" class="btn btn-detail">detail</a> -->
-
+        </div>
+    </section>
+    <section id="skill" class="basic-section">
+        <h2 id="skill-title">Skillset
+            <span>技術</span>
+        </h2>
+        <div class="row inner-wrap ">
+            <div class="col-md-4">
+                <i class="fab fa-adobe"></i><br>
+                <span>Photoshop<br>XD</span>
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <!-- <a href="">detail</a> -->
+                <div class="hidden_box hidden-gray">
+                    <label for="label1" class="btn btn-detail">detail<i class="fas fa-angle-down"></i></label>
+                    <input type="checkbox" id="label1" />
+                    <div class="hidden_show">
+                        <!--非表示ここから-->
+                        <p>業務では主にPhotoshopを使用しています。<br>個人でワイヤーフレーム等を作成する際はXDを使用しています。</p>
+                        <!--ここまで-->
                     </div>
                 </div>
-            </section>
-            <section id="contact" class="basic-section flip">
-                <h2 id="contact-title">Contact
-                    <span>お問い合わせ・SNS</span>
-                </h2>
-                <div class="small-wrap">
-                    <a href="https://github.com/kuwa87"><i class="fab fa-github"></i><br>https://github.com/kuwa87</a>
-                    <p>現在コンタクトフォームは準備中です。</p>
+
+            </div>
+            <div class="col-md-4 html">
+                <i class="fab fa-html5"></i><br>
+                <span>HTML5<br>CSS3</span>
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                <div class="hidden_box hidden-gray">
+                    <label for="label2" class="btn btn-detail">detail<i class="fas fa-angle-down"></i></label>
+                    <input type="checkbox" id="label2" />
+                    <div class="hidden_show">
+                        <!--非表示ここから-->
+                        <p>フレームワークを活用することもありますが、ゼロから組むことが可能です。<br>業務上、他のメンバーが作成したファイルを修正する機会も多かったため、デバッグも得意です。</p>
+                        <!--ここまで-->
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div class="col-md-4 boot">
+                <i class="fa fa-code"></i><br>
+                <span>Boot Strap</span>
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                <div class="hidden_box hidden-gray">
+                    <label for="label3" class="btn btn-detail">detail<i class="fas fa-angle-down"></i></label>
+                    <input type="checkbox" id="label3" />
+                    <div class="hidden_show">
+                        <!--非表示ここから-->
+                        <p>ひと通り活用することが可能です。本サイトはbootstrapをベースにコーディングしています。</p>
+                        <!--ここまで-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <i class="fab fa-wordpress-simple"></i><br>
+                <span>Word Press</span>
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                <div class="hidden_box hidden-gray">
+                    <label for="label4" class="btn btn-detail">detail<i class="fas fa-angle-down"></i></label>
+                    <input type="checkbox" id="label4" />
+                    <div class="hidden_show">
+                        <!--非表示ここから-->
+                        <p>カスタマイズが可能です。テーマの作成は業務上では経験がありませんが、個人で挑戦する予定です。</p>
+                        <!--ここまで-->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <i class="fab fa-js"></i><br>
+                <span>JavaScript<br>jQuery</span>
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                <div class="hidden_box hidden-gray">
+                    <label for="label5" class="btn btn-detail">detail<i class="fas fa-angle-down"></i></label>
+                    <input type="checkbox" id="label5" />
+                    <div class="hidden_show">
+                        <!--非表示ここから-->
+                        <p>業務では主に jQueryプラグインを活用しています。<br>文法は理解していますが、自力でスラスラ書くにはもう少し修行が必要です。<br>個人的にはWebGLとThree.jsを使用した3Dコンテンツの制作に関心があります。</p>
+                        <!--ここまで-->
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <i class="fab fa-php"></i><br>
+                <span>PHP</span>
+                <div><i class="fas fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i></div>
+                <div class="hidden_box hidden-gray">
+                    <label for="label6" class="btn btn-detail">detail<i class="fas fa-angle-down"></i></label>
+                    <input type="checkbox" id="label6" />
+                    <div class="hidden_show">
+                        <!--非表示ここから-->
+                        <p>業務ではプログラムを書くことはなかったものの、PHPファイル内の一部の設定を変更するなど、必要に応じて触ることがありました。<br>現在、鋭意勉強中です。</p>
+                        <!--ここまで-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="basic-section flip">
+        <h2 id="contact-title">Contact
+            <span>お問い合わせ・SNS</span>
+        </h2>
+        <div class="small-wrap">
+            <a href="https://github.com/kuwa87"><i class="fab fa-github"></i><br>https://github.com/kuwa87</a>
+            <!-- <p>現在コンタクトフォームは準備中です。</p> -->
+        </div>
+    </section>
     </div>
     </main>
     <p id="page-top"><a href="#"><i class="fas fa-chevron-up"></i></a></p>

@@ -31,6 +31,7 @@ $(function () {
 
   $win.on('load scroll', function () {
     var value = $(this).scrollTop();
+
     if (value > navPos) {
       $nav.addClass(fixedClass);
       $main.css('margin-top', navHeight);
@@ -62,6 +63,24 @@ jQuery(function ($) {
   $('a.nav-link').on('click', function () {
     if (window.innerWidth <= 768) {
       $('.navbar-toggler').click();
+    }
+  });
+});
+
+// テキスト用モーダル
+$(function () {
+  var modal = $('#modal'),
+    modalContent = $('#modal_content'),
+    btnOpen = $("#btn_open"),
+    btnClose = $(".btn_close");
+
+  $(btnOpen).on('click', function () {
+    modal.show();
+  });
+
+  $(modal).on('click', function (event) {
+    if (!($(event.target).closest(modalContent).length) || ($(event.target).closest(btnClose).length)) {
+      modal.hide();
     }
   });
 });
