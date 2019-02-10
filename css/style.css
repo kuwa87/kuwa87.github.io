@@ -285,13 +285,13 @@ p.quote2 {
     width: 140px;
 }
 
-.hidden_box label:hover,
+/* .hidden_box label:hover,
 .basic-section button.btn:hover,
 .basic-section a.btn:hover {
     background-color: #fff;
     color: #000;
     cursor: pointer;
-}
+} */
 
 /* .row{
     width: 100%;
@@ -523,6 +523,10 @@ label.btn-detail:hover {
 /* .hidden_box label:hover {
     background: #efefef;
 } */
+.hidden_box label:hover {
+    color: #fff;
+}
+
 
 /*チェックは見えなくする*/
 .hidden_box input {
@@ -530,13 +534,13 @@ label.btn-detail:hover {
 }
 
 /*中身を非表示にしておく*/
-.hidden_box .hidden_show {
+/* .hidden_box .hidden_show {
     height: 0;
     padding: 0;
     overflow: hidden;
     opacity: 0;
     transition: 0.8s;
-}
+} */
 
 /*クリックで中身表示*/
 .hidden_box input:checked~.hidden_show {
@@ -550,13 +554,25 @@ label.btn-detail:hover {
 
 }
 
+/*最初から中身表示*/
+.hidden_box .hidden_show {
+    height: auto;
+    opacity: 1;
+}
+
+.hidden_box .hidden_show p {
+    height: auto;
+    min-height: 190px;
+
+}
+
 .hidden-gray {
     padding: 10px;
     margin: 20px 10px;
 
 }
 
-.hidden_box.hidden-gray input:checked~.hidden_show p {
+.hidden_box.hidden-gray .hidden_show p {
     text-align: left;
     background: #f0f0f0;
     padding: 16px;
@@ -564,7 +580,7 @@ label.btn-detail:hover {
     position: relative;
 }
 
-.hidden_box.hidden-gray input:checked~.hidden_show p:before {
+.hidden_box.hidden-gray .hidden_show p:before {
     content: "";
     position: absolute;
     top: -30px;
